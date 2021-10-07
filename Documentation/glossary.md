@@ -1,15 +1,14 @@
 <h2> ER diagram Documentation:</h2>
-<h3>Relationships:</h3>
--Each Store has a donation cart</br>
--Each Store has a donation item</br>
--Each Item belongs to a category</br>
--Each Charity has one store</br>
--Each Charity has many orders</br>
--Each Charity can have many Frequent Donors under Users</br>
--Each Charity can have many companies supporting them</br>
--Each Charity can have multiple orders</br>
--Each Store can have multiple employees</br>
--Each Employee can have multiple orders</br>
+<h3>Relationships and Minima/Maxima:</h3>
+-Each Store has a donation cart 1:n </br>
+-Each Store has a donation item 1:1 </br>
+-Each Item belongs to a category n:1 </br>
+-Each Charity has one store 1:1 </br>
+-Each Charity has many orders n:n </br>
+-Each Charity can have many Frequent Donors under Users 1:n </br>
+-Each Charity can have multiple orders n:n </br>
+-Each Store can have multiple employees n:n </br>
+-Each Employee can have multiple orders n:n </br>
 
 <h3>Attributes:</h3>
 -Each Store has an ID, name, address, phone and email.</br>
