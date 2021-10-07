@@ -14,8 +14,8 @@
 
 
 #### Attributes:
--Each Store has an ID, name, address, phone and email
--Each employee has first and last name, gender position and store_id for the store they work for.
--Each order has an order-id, a store-id, sale-date and unit price.
--Each Donation Item has item id and card id.
--Each User also has a first and last name, phone, address, email and a password.
+-Each Store has an ID, name, address, phone and email.</br>
+-Each employee has first and last name, gender position and store_id for the store they work for.</br>
+-Each order has an order-id, a store-id, sale-date and unit price.</br>
+-Each Donation Item has item id and card id.</br>
+-Each User also has a first and last name, phone, address, email and a password.</br>
