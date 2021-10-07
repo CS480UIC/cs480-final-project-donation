@@ -1,5 +1,4 @@
 <h2> ER diagram Documentation:</h2>
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Relationships:
 User Donates to Charity [Many-to-Many]
   Many users can Donate to many charities
