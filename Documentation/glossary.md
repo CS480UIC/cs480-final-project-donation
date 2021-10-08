@@ -1,4 +1,11 @@
+Glossary
+Entity Name: User
+Synonyms : user, customer
+
+Description: A user is any customer who can donate stuff to store or who can need stuff from the store.
+User include both donator and receiver. But excludes any employee who works at store. so user_id will include donator_id and receiver_id, but except employee_id
 <h2> ER diagram Documentation:</h2>
+
 <h3>Relationships and Minima/Maxima:</h3>
 -Each Store has a donation cart 1:n </br>
 -Each Store has a donation item 1:1 </br>
