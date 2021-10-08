@@ -18,6 +18,9 @@ Entity Name: Item
 Synonyms: stuff, donation stuff, donation item
 Description: a item means any single thing that donator or user donate to store with donationcart. Each item has unique id name “item_id”. In table item, we can find each item danationCart id that means who and when this item donate. Also we can check the item whether was ordered by order_id. Each item has a name or its own description.
 
+Entity Name: Order
+Description: an order means any order that user want to buy. The user can be any customer or receiver who need stuff or items. So user submit order to employee. Each order has its own unique id, total sale amount and the employee id who manage this order . Each order has its date .
+
 Relationship Name: Category_include_item
 Description: each category include many items. For example, furniture include chair, desk, bed. Cloth include pans, jacket, underwear. Each category may include zero item or many items. One item only belong to one category.
 <h2> ER diagram Documentation:</h2>
