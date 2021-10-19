@@ -44,11 +44,11 @@ Description: each category include many items. For example, furniture include ch
 -Each User also has a first(varchar) and last name(varchar), phone(varchar), address(varchar), email(varchar) and a password(varchar).</br>
 
 <h3>Cascade and Restrict</h3>
--Cascade delete donation_cart on user
--Cascade delete donation_item on order
--Cascade delete category on donation_item
--Restrict delete employee on store
--Restrict delete donation_item on donation_cart
+-Cascade delete donation_cart on user</br>
+-Cascade delete donation_item on order</br>
+-Cascade delete category on donation_item</br>
+-Restrict delete employee on store</br>
+-Restrict delete donation_item on donation_cart</br>
 
 <h3>
 
