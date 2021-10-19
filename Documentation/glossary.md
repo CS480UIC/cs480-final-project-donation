@@ -36,9 +36,21 @@ Description: each category include many items. For example, furniture include ch
 -Each Store can have multiple employees n:n </br>
 -Each Employee can have multiple orders n:n </br>
 
-<h3>Attributes:</h3>
--Each Store has an ID, name, address, phone and email.</br>
--Each employee has first and last name, gender position and store_id for the store they work for.</br>
--Each order has an order-id, a store-id, sale-date and unit price.</br>
--Each Donation Item has item id and card id.</br>
--Each User also has a first and last name, phone, address, email and a password.</br>
+<h3>Attributes and Attribute Types:</h3>
+-Each Store has an ID (int), name (varchar), address (varchar), phone (varchar) and email (varchar).</br>
+-Each employee has first (varchar) and last name (varchar), gender(varchar) position(varchar) and store_id(int) for the store they work for.</br>
+-Each order has an order-id(int), a store-id(int), sale-date(date) and unit price(double).</br>
+-Each Donation Item has item id(int) and card id(int).</br>
+-Each User also has a first(varchar) and last name(varchar), phone(varchar), address(varchar), email(varchar) and a password(varchar).</br>
+
+<h3>Cascade and Restrict</h3>
+-Cascade delete donation_cart on user
+-Cascade delete donation_item on order
+-Cascade delete category on donation_item
+-Restrict delete employee on store
+-Restrict delete donation_item on donation_cart
+
+<h3>
+
+<h4>Our database does not have any supertype of subtype usage.</h4>
+
