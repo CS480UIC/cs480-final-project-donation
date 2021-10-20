@@ -1,56 +1,79 @@
-Glossary
-Entity Name: User
-Synonyms : user, customer
-Description: A user is any customer who can donate stuff to store or who can need stuff from the store.
-User include both donator and receiver. But excludes any employee who works at store. so user_id will include donator_id and receiver_id, but except employee_id
+Glossary 
 
-Entity Name: Donation Cart
-Synonyms : Cart, donation cart
-Description: a donation cart is a tool container in which user make a donation. Donation activity was marked on specific date and time. 
-Relationship : User_use_DonationCart
-Description: one user can use no doncation cart without donation or user can use one or more donation carts to make donations. So donation with DonationCart is optional.
+Entity Name: store
 
-Entity Name: Category
-Synonyms: DonationCategory
-Description: category includes many different category that donation stuff belong to. Each specific category has its own unique id named category_id. For example: categories may include furniture, cloth, shoe, electronic and so on. Categoryid “001” means cloth, “002” means furniture.
+Synonyms: Donation store, Better Will
 
-Entity Name: Item
-Synonyms: stuff, donation stuff, donation item
-Description: a item means any single thing that donator or user donate to store with donationcart. Each item has unique id name “item_id”. In table item, we can find each item danationCart id that means who and when this item donate. Also we can check the item whether was ordered by order_id. Each item has a name or its own description.
+Description: a store that has a exact address to do some charity business by accepting customer or donator donate some items and sell these items to someone who need.
 
-Entity Name: Order
-Description: an order means any order that user want to buy. The user can be any customer or receiver who need stuff or items. So user submit order to employee. Each order has its own unique id, total sale amount and the employee id who manage this order . Each order has its date .
+Entity Name: employee
 
-Relationship Name: Category_include_item
-Description: each category include many items. For example, furniture include chair, desk, bed. Cloth include pans, jacket, underwear. Each category may include zero item or many items. One item only belong to one category.
-<h2> ER diagram Documentation:</h2>
+Synonyms: worker
 
-<h3>Relationships and Minima/Maxima:</h3>
--Each Store has a donation cart 1:n </br>
--Each Store has a donation item 1:1 </br>
--Each Item belongs to a category n:1 </br>
--Each Charity has one store 1:1 </br>
--Each Charity has many orders n:n </br>
--Each Charity can have many Frequent Donors under Users 1:n </br>
--Each Charity can have multiple orders n:n </br>
--Each Store can have multiple employees n:n </br>
--Each Employee can have multiple orders n:n </br>
+Description: An employee is the person who work at a donation store. Each employee has his/her own employee_id. Employee should not include customer or donator or receiver. Each employee has his/her position such as sales, accounter, manager and so on.
 
-<h3>Attributes and Attribute Types:</h3>
--Each Store has an ID (int), name (varchar), address (varchar), phone (varchar) and email (varchar).</br>
--Each employee has first (varchar) and last name (varchar), gender(varchar) position(varchar) and store_id(int) for the store they work for.</br>
--Each order has an order-id(int), a store-id(int), sale-date(date) and unit price(double).</br>
--Each Donation Item has item id(int) and card id(int).</br>
--Each User also has a first(varchar) and last name(varchar), phone(varchar), address(varchar), email(varchar) and a password(varchar).</br>
+Entity Name: user
 
-<h3>Cascade and Restrict</h3>
--Cascade delete donation_cart on user</br>
--Cascade delete donation_item on order</br>
--Cascade delete category on donation_item</br>
--Restrict delete employee on store</br>
--Restrict delete donation_item on donation_cart</br>
+Synonyms: customer, donator and receiver
 
-<h3>
+Description: an user is the person who want to donate items to the store or want to buy some items from store. The user should not include employee or someone who work at store. 
 
-<h4>Our database does not have any supertype of subtype usage.</h4>
+Entity Name: orders
+
+Synonyms: the order, business order, donation order.
+
+Description: An order is a business form that record some transaction information. If user want to buy some items from store, he/she will put a order to an emplyee. In each order, it has a total amount that user will spend and transaction date that order happened. Each order should has a status to show this order paid,or not paid, on processing and so on.
+
+Entity Name: donation_cart
+
+Synonyms: cart, donation cart
+
+Description: a donation cart is a tool that will be used by user to make a donation. Each donation cart has a date and donation_id to mark each donation information.
+
+Entity Name: item
+
+Synonyms: donation item, stuff, goods
+
+Description: a item is the stuff that donator donate to store. It will be sold at store in an order that created by receiver and managed by a sales. 
+
+Entity Name: category 
+
+Description: a category is a general set of similar items. For exaple: furniture should has chair, table, cabinet. Cloth should has pans, jacket,T-shirt. 
+
+Relationship: 
+
+
+-Each Store has at least one employee to work, but also each store has more thatn one employees. 
+
+-Each employee should work at only one store. so that means an employee cannot work at different store.
+
+-An employee can manage 0 or more orders,because some employee are not sales. An order should has only one employee to manage it. 
+
+-Each user can put 0 order if he donot want to buy items, or he can put more orders to buy some items.
+
+-Each order has only one user
+
+-Each user can use 0 donation cart if he donot want to donate. Or he can use more carts to make multi-times donation.
+
+-Each Cart has only one donator.
+
+-Each order can has at least one item. but each item may has belong to a order if some receiver like it or the item has no order because no one like.
+
+-Each item should belong to only one category and each category include 0 or more items because some item may not belong to one specific category.
+
+Attributes and Attribute Types:
+-Each Store has an ID (int), name (varchar), address (varchar), phone (varchar) and email (varchar).
+-Each employee has first (varchar) and last name (varchar), gender(varchar) position(varchar) and store_id(int) for the store they work for.
+-Each order has an order-id(int), a store-id(int), sale-date(date) and total_amount(float).
+-Each Donation Item has item id(int) and card id(int).
+-Each User also has a first(varchar) and last name(varchar), phone(varchar), address(varchar), email(varchar) and a password(varchar).
+Cascade and Restrict
+-Cascade delete donation_cart on user
+-Cascade delete donation_item on order
+-Cascade delete category on donation_item
+-Restrict delete employee on store
+-Restrict delete donation_item on donation_cart
+Our database does not have any supertype of subtype usage.
+
+
 
