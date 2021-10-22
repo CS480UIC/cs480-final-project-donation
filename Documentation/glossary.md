@@ -47,7 +47,7 @@ Relationship:
 
 -Each employee should work at only one store. so that means an employee cannot work at different store.
 
--An employee can manage 0 or more orders,because some employee are not sales. An order should has only one employee to manage it. 
+-Each employee can manage 0 or more orders,because some employee are not sales. An order should has only one employee to manage it. 
 
 -Each user can put 0 order if he donot want to buy items, or he can put more orders to buy some items.
 
