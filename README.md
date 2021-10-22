@@ -1,5 +1,5 @@
 [![Work in MakeCode](https://classroom.github.com/assets/work-in-make-code-c53f0c86300af1a64cdd5dc830e2509efd17c8cb483a722cacaee84d10eb8ec9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5817089&assignment_repo_type=AssignmentRepo)<br />
-<h2>Database name:</h2> Donation<br />
+<h2>Database Name:</h2> Donation<br />
 <h2>Team Members Name:</h2> Ajitesh Bansal and Kai Qi.<br />
 <h2>Project Description:</h2><br /> We will develope a database for donation. In our project we will create a database in which we will allow
  the donor to create their ID and after which the donor will be able to upload the description of the items that he is interested to donate.
