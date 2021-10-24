@@ -8,7 +8,7 @@ CREATE TABLE `store` (
   UNIQUE KEY `store_id_UNIQUE` (`store_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `user` (
+CREATE TABLE `tb_user` (
   `user_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
