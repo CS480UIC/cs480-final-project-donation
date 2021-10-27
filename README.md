@@ -7,7 +7,8 @@
    donation. We will develop a webpage using ELcipse IDE which we will connected to the database using the tomcat server. The webpage will be
     developed in such a way that it have a login page, under which the user will be able to create their unique login ID or will be able to enter
     their credentials to access the database. After signing in, the user will be diverted to inverntory page under which the user will be to add,
-     mopdify or delete items according to their requirement.
+     modify or delete items according to their requirement.
+     
 
 ![Before Log_in](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/homeScreenBeforeLogin.png) 
 
