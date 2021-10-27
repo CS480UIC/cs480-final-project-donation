@@ -9,10 +9,10 @@
     their credentials to access the database. After signing in, the user will be diverted to inverntory page under which the user will be to add,
      mopdify or delete items according to their requirement.
 <h2>Home Screenshot before Log in</h2>
-![](https://raw.githubusercontent.com/CS480UIC/cs480-final-project-donation/main/Documentation/homeScreenBeforeLogin.png) 
+![Before Log_in](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/homeScreenBeforeLogin.png) 
 <h2>After Log In 
-![After Log In](https://raw.githubusercontent.com/CS480UIC/cs480-final-project-donation/main/Documentation/AfterLogin.png) 
-![Store Create](https://raw.githubusercontent.com/CS480UIC/cs480-final-project-donation/main/Documentation/createstore.png)
+![After Log In](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/AfterLogin.png) 
+![Store Create](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/createstore.png)
 <h2><Read Store</h2>
 ![Read Store](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/readstore.png)
 
