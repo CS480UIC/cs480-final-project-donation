@@ -8,3 +8,22 @@
     developed in such a way that it have a login page, under which the user will be able to create their unique login ID or will be able to enter
     their credentials to access the database. After signing in, the user will be diverted to inverntory page under which the user will be to add,
      mopdify or delete items according to their requirement.
+<h2>Home Screenshot before Log in</h2>
+![](/home/kq/Desktop/CS480/homeScreenBeforeLogin.png) 
+
+![After Log In](/home/kq/Desktop/CS480/AfterLogin.png) 
+![Store Create](/home/kq/Documents/createstore.png  "storecreate")
+<h2><Read Store</h2>
+![Read Store](/home/kq/Documents/readstore.png  "storeread")
+
+![Update Store](/home/kq/Documents/updatestore.png  "storeupdate")
+
+![Delete Store](/home/kq/Documents/deletestore.png  "storedelete")
+<h2>Create Employee</h2>
+![Create Employee](/home/kq/Documents/createemployee.png  "create employee")
+
+![Read Employee](/home/kq/Documents/reademployee.png) 
+<h2>Update Employee</h2>
+![Update Employee](/home/kq/Documents/updateemployee.png) 
+
+![Delete Employee](/home/kq/Documents/deleteemployee.png) 
