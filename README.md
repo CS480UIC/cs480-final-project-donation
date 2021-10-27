@@ -10,7 +10,7 @@
      mopdify or delete items according to their requirement.
 <h2>Home Screenshot before Log in</h2>
 ![](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/homeScreenBeforeLogin.png) 
-
+<h2>After Log In 
 ![After Log In](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/AfterLogin.png) 
 ![Store Create](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/createstore.png)
 <h2><Read Store</h2>
