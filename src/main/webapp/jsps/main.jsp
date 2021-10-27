@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>main</title>
+    <title>donation</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -42,7 +42,7 @@
   
   <body>
 <table class="table" align="center">
-	<tr style="background: #4682B4; height: 120px; ">
+	<tr style="background: #4682B4; height: 360px; ">
 		<td colspan="2" align="center">
 			<iframe frameborder="0" src="<c:url value='/jsps/top.jsp'/>" name="top"></iframe>
 		</td>

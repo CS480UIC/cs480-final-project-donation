@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Login User</title>
+    <title>Delete Store</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,15 +21,13 @@
   </head>
   
   <body>
-  <h1>Login</h1>
-
-
-<p style="color: red; font-weight: 900"> ${msg}</p>
-<form action="<c:url value='/UserServletLogin'/>" method="post">
-	<input type="hidden" name="method" value="login"/>
-		User：	<input type="text" name="username" /><br/>
-	Password：	<input type="password" name="password" /><br/>
-	<input type="submit" value="Login"/>
+  <h1>Delete Store</h1>
+<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+	<input type="hidden" name="method" value="search"/>
+	Delete Store ID:<input type="text" name="store_id" value="${form.store_id}"/>
+	<span style="color: red; font-weight: 900">${errors.store_id }</span>
+	<br/>
+	<input type="submit" value="Delete Store"/>
 </form>
   </body>
 </html>

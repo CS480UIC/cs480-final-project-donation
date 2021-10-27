@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Login User</title>
+    <title>Delete Entity</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,15 +21,20 @@
   </head>
   
   <body>
-  <h1>Login</h1>
-
-
-<p style="color: red; font-weight: 900"> ${msg}</p>
-<form action="<c:url value='/UserServletLogin'/>" method="post">
-	<input type="hidden" name="method" value="login"/>
-		User：	<input type="text" name="username" /><br/>
-	Password：	<input type="password" name="password" /><br/>
-	<input type="submit" value="Login"/>
+  <h1>Delete Entity</h1>
+<p style="color: red; font-weight: 900">${msg }</p>
+<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+	<input type="hidden" name="method" value="delete"/>
+		<input type="hidden" name="username" value="${entity1.username }"/>
+	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	<br/>
+	
+	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	<br/>
+	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	<br/>
+	<input type="submit" value="Delete Entity1"/>
 </form>
-  </body>
+
+</body>
 </html>

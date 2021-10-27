@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Login User</title>
+    <title>Update Employee</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,15 +21,16 @@
   </head>
   
   <body>
-  <h1>Login</h1>
-
-
-<p style="color: red; font-weight: 900"> ${msg}</p>
-<form action="<c:url value='/UserServletLogin'/>" method="post">
-	<input type="hidden" name="method" value="login"/>
-		User：	<input type="text" name="username" /><br/>
-	Password：	<input type="password" name="password" /><br/>
-	<input type="submit" value="Login"/>
+  <h1>Update Employee</h1>
+<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+	<input type="hidden" name="method" value="search"/>
+	Update Postion   :<input type="text" name="position" value="${form.position }"/>
+	<span style="color: red; font-weight: 900">${errors.position }</span>
+	<br/>
+	Update Store id  :<input type="text" name="store_id" value="${form.store_id }"/>
+	<span style="color: red; font-weight: 900">${errors.store_id }</span>
+	<br/>
+	<input type="submit" value="Update Employee"/>
 </form>
   </body>
 </html>

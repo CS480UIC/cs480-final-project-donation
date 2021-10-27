@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Store Create</title>
+    <title>Delete Employee</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,18 +21,19 @@
   </head>
   
   <body>
-  <h1>Entity1 Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	User    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+  <h1>Delete Employee</h1>
+<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+	<input type="hidden" name="method" value="search"/>
+	Delete Postion  :<input type="text" name="postion" value="${form.position }"/>
+	<span style="color: red; font-weight: 900">${errors.store_id }</span>
 	<br/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Delete Employ ID   :<input type="text" name="employee_id" value="${form.employee_id }"/>
+	<span style="color: red; font-weight: 900">${errors.store_id }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Delete Email   :<input type="text" name="email" value="${form.email }"/>
+	<span style="color: red; font-weight: 900">${errors.store_id }</span>
 	<br/>
-	<input type="submit" value="Create Entity1"/>
+	<input type="submit" value="Delete Employee"/>
 </form>
   </body>
 </html>

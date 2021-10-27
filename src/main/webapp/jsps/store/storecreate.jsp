@@ -21,18 +21,24 @@
   </head>
   
   <body>
-  <h1>Entity1 Create</h1>
+  <h1>Create Store Record</h1>
 <form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	User    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Store Id:<input type="text" name="store_id" value="${form.store_id }"/>
+	<span style="color: red; font-weight: 900">${errors.store_id }</span>
 	<br/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Store Name：<input type="text" name="store_name" value="${form.store_name }"/>
+	<span style="color: red; font-weight: 900">${errors.store_name }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
+	Address：<input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address }</span>
+	<br/>
+	Phone：<input type="text" name="phone" value="${form.phone }"/>
+	<span style="color: red; font-weight: 900">${errors.phone }</span>
+	<br/>
+	Email：<input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	<input type="submit" value="Create Entity1"/>
+	<input type="submit" value="Create Store"/>
 </form>
   </body>
 </html>

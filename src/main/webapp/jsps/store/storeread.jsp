@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Store Create</title>
+    <title>Read Store</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,18 +21,20 @@
   </head>
   
   <body>
-  <h1>Entity1 Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	User    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+  <h1>Read Store Name</h1>
+<p style="color: red; font-weight: 900">${msg }</p>
+<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+	<input type="hidden" name="method" value="regist"/>
+	Store Name  :<input type="text" name="store_name" value="${form.store_name}"/>
+	<span style="color: red; font-weight: 900">${errors.store_name }</span>
 	<br/>
-	Password：<input type="password" name="password" value="${form.password }"/>
+<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
 	Email	：<input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/>
-	<input type="submit" value="Create Entity1"/>
+	<br/> --%>
+	<input type="submit" value="Read Store Name"/>
 </form>
   </body>
 </html>

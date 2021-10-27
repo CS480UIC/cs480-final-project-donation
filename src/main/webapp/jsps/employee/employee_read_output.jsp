@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Login User</title>
+    <title>Read Entity Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,15 +21,17 @@
   </head>
   
   <body>
-  <h1>Login</h1>
-
-
-<p style="color: red; font-weight: 900"> ${msg}</p>
-<form action="<c:url value='/UserServletLogin'/>" method="post">
-	<input type="hidden" name="method" value="login"/>
-		User：	<input type="text" name="username" /><br/>
-	Password：	<input type="password" name="password" /><br/>
-	<input type="submit" value="Login"/>
+  <h1>Read Entity Output</h1>
+<p style="color: red; font-weight: 900">${msg }</p>
+<form>
+	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	<br/>
+	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	<br/>
+	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	<br/>
 </form>
-  </body>
+
+<button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
+</body>
 </html>
