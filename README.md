@@ -30,11 +30,11 @@
 
 
 ![Delete Employee](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/deleteemployee.png) 
-
+![Update Employee](https://raw.githubusercontent.com/CS480UIC/cs480-final-project-donation/main/Documentation/updateemployee.png) 
 
 
 ![bodyAndTop](https://user-images.githubusercontent.com/67171775/139299200-3ad03ce1-a2af-48c6-8d17-f9ace0d2dab0.png)
-![Update Employee](https://raw.githubusercontent.com/CS480UIC/cs480-final-project-donation/main/Documentation/updateemployee.png) 
+
 ![createItem](https://user-images.githubusercontent.com/67171775/139299162-253c3fe5-489d-448b-8f48-72ae177941d3.png)
 ![createOrder](https://user-images.githubusercontent.com/67171775/139299167-9da69cfa-3751-400b-b864-eef3a5325599.png)
 ![deleteItem](https://user-images.githubusercontent.com/67171775/139299169-9a6940f0-8b83-4a17-9b9f-495956a22901.png)
