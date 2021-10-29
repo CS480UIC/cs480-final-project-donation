@@ -14,7 +14,7 @@
 
 ![After Log In](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/AfterLogin.png) 
 
-![Redesigned Menu](https://github.com/CS480UIC/cs480-final-project-donation/tree/main/Documentation/bodyAndTop.png)
+![Redesigned Menu](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/bodyAndTop.png)
 
 ![Store Create](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/createstore.png)
 
