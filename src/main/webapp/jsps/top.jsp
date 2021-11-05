@@ -17,7 +17,8 @@
 	-->
 <style type="text/css">
 	body {
-		background: #46b44c; 
+		background: #9B9;
+		border-radius: 30pt
 	}
 	a {
 		text-transform:none;
@@ -28,10 +29,12 @@
 	}
 	ul {
 		margin: 0;
-		padding: 0;
+		padding: 5px 10px;
+		border-radius: 30pt;
 		list-style-type: none; /*去除li前的标注*/
-		background-color: #333;
+		background-color: #ADA;
 		overflow: hidden; /*隐藏溢出的部分，保持一行*/
+		margin-top:20px
 		}
 
 
@@ -46,14 +49,18 @@
 
 	li a, .dropbtn {
 		display: inline-block; /*设置成块*/
-		color: green;
+		color: black;
+		background-color:#CCC;
 		text-align: center;
 		text-decoration: none;
 		padding: 14px 16px;
+		margin-top:3px;
+		margin-left:2px;
+		border-radius: 10pt;
 	}
 
 	li a:hover, .dropdown:hover .dropbtn { /*鼠标移上去，改变背景颜色*/
-		background-color: #111;
+		background-color: #888;
 	}
 
 
@@ -68,14 +75,21 @@
 		background-color: #f9f9f9;
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		border-radius: 5pt;
+		
 	}
 
 
 	.dropdown-content a {
 		display: block;
 		color: black;
-		padding: 10px 15px;
+		padding: 10px 3px;
 		text-decoration:none;
+		border-radius: 4pt;
+		outline-style: ridge;
+		outline-width: 1px;
+		outline-color: #090;
+		background-color: #CFC;
 	}
 
 
@@ -87,16 +101,32 @@
 	.dropdown:hover .dropdown-content{
 		display: block;
 	}
+	.panel-text{
+		padding: 20px 20px;
+		border-radius: 10pt;
+		font-family: Times;
+		background-color:#CCC;
+		margin-right: -160px;
+		margin-left: 150px
+		
+	}
+	.outform {
+		font-family:Times;
+		font-size : 14px;
+		padding: 10px 10px;
+		margin-left: 600px;
+		margin-right:50px;
+	 
+	}
 </style>
   </head>
   
   <body>
-<h1 style="text-align: center;">KAI QI</h1>
+<h1 style="text-align: center; font-family: Cambria;">KAI QI AND AJITESH BANSAL</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
-			<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp;&nbsp;
+			
 			<div class="dropdown">
 			  <button class="dropbtn">Store</button>
 			  <div class="dropdown-content">			
@@ -105,14 +135,17 @@
 		        <a href="<c:url value='/jsps/store/storeupdate.jsp'/>" target="_parent">Update Store</a> 
 		        <a href="<c:url value='/jsps/store/storedelete.jsp'/>" target="_parent">Delete Store</a>
 	           </div>
-	          </div>      
+	          </div> 
+	         <a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent" class = "panel-text">Login</a> &nbsp;
+			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent" class = "panel-text">Register</a> &nbsp;&nbsp;     
 		</c:when>
 		<c:otherwise>
-			Hello：${sessionScope.session_user.username };
+			<div style="font-size: 30px; text-transform: capitalize">Hello ${sessionScope.session_user.username }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			 <a class="outform" href="<c:url value='/UserServletLogout'/>" target="_parent" class = "panel-text">Logout</a>
+			 </div>
 			<ul>
-			<li><a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a></li> &nbsp;&nbsp;
-			<li><a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> </li>&nbsp;&nbsp;&nbsp; 
-			 
+			<li>
 			<div class="dropdown">
 			 
 			  <button class="dropbtn">Store</button>
@@ -123,7 +156,8 @@
 		        <a href="<c:url value='/jsps/store/storedelete.jsp'/>" target="_parent">Delete Store</a>
 			  </div>
 			 </div>	
-			 
+			 </li>
+			 <li>
 			 <div class="dropdown"> 
 			 <button class="dropbtn">Employee</button>
 			  <div class="dropdown-content">
@@ -133,11 +167,37 @@
 		        <a href="<c:url value='/jsps/employee/employeedelete.jsp'/>" target="_parent">Delete Employee</a>
 			 </div> 
 			 </div>
+			 </li>
+			 <li>
+			 <div class = "dropdown">
+			 	<button class = "dropbtn">Manage Order</button>
+			 		<div class="dropdown-content">
+						<a href="<c:url value='/jsps/Order/ordercreate.jsp'/>" target="_parent">Create Order</a>  
+				        <a href="<c:url value='/jsps/Order/orderread.jsp'/>" target="_parent">Read Order</a> 
+				        <a href="<c:url value='/jsps/Order/orderupdate.jsp'/>" target="_parent">Update Order</a> 
+				        <a href="<c:url value='/jsps/Order/orderdelete.jsp'/>" target="_parent">Delete Order</a>
+					 </div> 
+			 </div>
+			 <li>
+			 <div class = "dropdown">
+			 	<button class = "dropbtn">Items to Donate</button>
+			 		<div class="dropdown-content">
+						<a href="<c:url value='/jsps/Item/itemcreate.jsp'/>" target="_parent">Create Item</a>  
+				        <a href="<c:url value='/jsps/Item/itemread.jsp'/>" target="_parent">Read Item</a> 
+				        <a href="<c:url value='/jsps/Item/itemupdate.jsp'/>" target="_parent">Update Item</a> 
+				        <a href="<c:url value='/jsps/Item/itemdelete.jsp'/>" target="_parent">Delete Item</a>
+					 </div> 
+			 </div>
+			 </li>
 			 
-			 <!-- Add your two different tables here, just copy from line 127 to line 135 and change button Value to
-			 your table name such as Orders, and change link a to yourtableCRUD.jsp  and Change the value, your do not 
-			 change other CSS style code -->
+			 
+			<li><a href="<c:url value='/jsps/user/queries.jsp'/>" target="body" class = "panel-text">Query Result</a></li> &nbsp;&nbsp;
+			
+			
+			  
+			 
 			</ul>
+			
 			 
 			 
 		</c:otherwise>
