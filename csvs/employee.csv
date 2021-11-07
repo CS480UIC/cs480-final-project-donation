@@ -1,0 +1,14 @@
+Timestamp,employee_id,store_id,first_name,last_name,gender,position,email
+10/19/2021 23:12:42,50001,1001,Arsala,Khan,Male,Senior Manager,a.khan@gmail.com
+10/19/2021 23:13:18,50002,1002,Neelansh,Shah,Male,Manager,n.shah@gmail.com
+10/19/2021 23:13:51,50003,1003,Karan,Patel,Male,Cashier,k.patel@gmail.com
+10/19/2021 23:14:35,50004,1004,Taha,Shah,Male,Customer Executive,t.shah@gmail.com
+10/19/2021 23:15:32,50005,1005,Tarun,Verma,Male,Software Engineer,t.verma@gmail.com
+10/19/2021 23:25:41,50006,1006,Vijay,Kochar,Male,Network Engineer,vjay.k@gmail.com
+10/23/2021 22:41:05,50007,1001,tom ,cruise,male,Sales,tom_curise@gmail.com
+10/23/2021 22:43:49,50008,1002,Jerry,Henderson,Male,Sales,jerry_henderson@gmail.com
+10/23/2021 22:45:34,50009,1003,Mary,Lee,Female,Sales,mary_lee@yahoo.com
+10/23/2021 22:54:32,50010,1004,Jeniffer,Stone,female,Sales,jeniffer_stone@yahoo.com
+10/23/2021 22:57:15,50011,1005,Vicky,Charles,female,Sales,vicky_charles@gmail.com
+10/23/2021 22:59:51,50012,1006,Annie,Barton,female,Sales,annie_barton@hotmail.com
+10/23/2021 23:02:26,50013,1001,Mike,Ovens,male,Sales,mike_ovens@gmail.com

@@ -1,0 +1,7 @@
+Timestamp,Score,user_id,first_name,last_name,phone,address,email,password
+10/19/2021 23:18:05,,10001,Ashta,shah,312-111-1111,Taylor Street,ashta.s@gmail.com,12345
+10/19/2021 23:18:59,,10002,Agne ,Kwaski,321-323-6454,Madison Street,agne.k@gmail.com,abcdef
+10/19/2021 23:19:56,,10003,Stephanie,Claire,312-434-6212,Loomis Street,stephanie.c@gmail.com,123abc
+10/19/2021 23:21:44,,10004,Zain,Malik,854-568-8813,Van Buren Street,Zain.m@gmail.com,hgfdsa
+10/19/2021 23:22:46,,10005,Anchal ,Parmar,989-788-7883,14th STreet,anchal.p@gmail.com,poilu123
+10/19/2021 23:24:14,,10006,Chris,Patel,372-423-4353,Lexington STreet,chris.p@gmail.com,all123
