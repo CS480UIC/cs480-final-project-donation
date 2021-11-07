@@ -7,16 +7,14 @@
    donation. We will develop a webpage using ELcipse IDE which we will connected to the database using the tomcat server. The webpage will be
     developed in such a way that it have a login page, under which the user will be able to create their unique login ID or will be able to enter
     their credentials to access the database. After signing in, the user will be diverted to inverntory page under which the user will be to add,
-<<<<<<< HEAD
-     mopdify or delete items according to their requirement.
-<h2>Home Screenshot before Log in</h2>
+
+
 ![](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/homeScreenBeforeLogin.png) 
 <h2>After Log In</h2> 
 ![After Log In](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/AfterLogin.png) 
 ![Store Create](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/createstore.png)
-<h2>Read Store</h2>
-=======
-     modify or delete items according to their requirement.
+
+
      
 
 ![Before Log_in](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/homeScreenBeforeLogin.png) 
@@ -34,20 +32,19 @@
 
 ![Delete Store](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/deletestore.png)
 <<<<<<< HEAD
-<h2>Create Employee</h2>
+
 ![Create Employee](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/createemployee.png)
-=======
+
 
 ![Create Employee](https://raw.githubusercontent.com/CS480UIC/cs480-final-project-donation/main/Documentation/createemployee.png)
 >>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-donation.git
 
 ![Read Employee](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/reademployee.png) 
-<<<<<<< HEAD
-<h2>Update Employee</h2>
-![Update Employee](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/updateemployee.png) 
-=======
 
->>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-donation.git
+
+![Update Employee](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/updateemployee.png) 
+
+
 
 ![Delete Employee](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/deleteemployee.png) 
 ![Update Employee](https://raw.githubusercontent.com/CS480UIC/cs480-final-project-donation/main/Documentation/updateemployee.png) 
