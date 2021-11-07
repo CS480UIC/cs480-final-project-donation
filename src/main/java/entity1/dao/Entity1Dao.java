@@ -27,7 +27,7 @@ public class Entity1Dao {
 	/**
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "666"; //TODO change password
+	private String MySQL_password = "saleemi123"; //TODO change password
 
 	public Entity1 findByUsername(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		Entity1 entity1 = new Entity1();

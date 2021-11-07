@@ -118,6 +118,12 @@
 		margin-right:50px;
 	 
 	}
+	.seperate{
+		margin-left:20px;
+		margin-right:300px;
+		padding: 20px 20px;
+		display:block;
+	}
 </style>
   </head>
   
@@ -142,7 +148,6 @@
 		<c:otherwise>
 			<div style="font-size: 30px; text-transform: capitalize">Hello ${sessionScope.session_user.username }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			
-			 <a class="outform" href="<c:url value='/UserServletLogout'/>" target="_parent" class = "panel-text">Logout</a>
 			 </div>
 			<ul>
 			<li>
@@ -188,10 +193,15 @@
 				        <a href="<c:url value='/jsps/Item/itemdelete.jsp'/>" target="_parent">Delete Item</a>
 					 </div> 
 			 </div>
-			 </li>
+			 </li>&nbsp;&nbsp;&nbsp;&nbsp;
 			 
 			 
-			<li><a href="<c:url value='/jsps/user/queries.jsp'/>" target="body" class = "panel-text">Query Result</a></li> &nbsp;&nbsp;
+			<li><a href="<c:url value='/UserServletLogout'/>" target="_parent" class = "dropbtn">Log Out</a></li> &nbsp;&nbsp;
+			<div class="seperate">
+			<li><a href="<c:url value='/jsps/user/queries.jsp'/>" target="body" class="dropbtn">Query Result</a></li> &nbsp;&nbsp;
+			<li><a href="<c:url value='/jsps/user/queries.jsp'/>" target="body" class="dropbtn">Initialize  Database</a></li> &nbsp;&nbsp;
+			<li><a href="<c:url value='/jsps/user/queries.jsp'/>" target="body" class="dropbtn">Delete Database</a></li> &nbsp;&nbsp;
+			</div>
 			
 			
 			  
