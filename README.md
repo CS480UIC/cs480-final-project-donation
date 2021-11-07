@@ -25,19 +25,19 @@
 
 ![Store Create](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/createstore.png)
 
->>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-donation.git
+
 ![Read Store](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/readstore.png)
 
 ![Update Store](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/updatestore.png)
 
 ![Delete Store](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/deletestore.png)
-<<<<<<< HEAD
+
 
 ![Create Employee](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/createemployee.png)
 
 
 ![Create Employee](https://raw.githubusercontent.com/CS480UIC/cs480-final-project-donation/main/Documentation/createemployee.png)
->>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-donation.git
+
 
 ![Read Employee](https://github.com/CS480UIC/cs480-final-project-donation/raw/main/Documentation/reademployee.png) 
 
