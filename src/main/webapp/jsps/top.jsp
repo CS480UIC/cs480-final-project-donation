@@ -143,7 +143,8 @@
 	           </div>
 	          </div> 
 	         <a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent" class = "panel-text">Login</a> &nbsp;
-			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent" class = "panel-text">Register</a> &nbsp;&nbsp;     
+			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent" class = "panel-text">Register</a> &nbsp;&nbsp; 
+			 <a href="<c:url value='/jsps/user/initialize.jsp'/>" target="_parent" class = "panel-text">Initialize Database</a> &nbsp;    
 		</c:when>
 		<c:otherwise>
 			<div style="font-size: 30px; text-transform: capitalize">Hello ${sessionScope.session_user.username }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
