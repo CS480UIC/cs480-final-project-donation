@@ -27,7 +27,7 @@
 <p style="color: red; font-weight: 900"> ${msg}</p>
 <form action="<c:url value='/UserServletLogin'/>" method="post">
 	<input type="hidden" name="method" value="login"/>
-		User：	<input type="text" name="username" /><br/>
+	User First Name：	<input type="text" name="first_name" /><br/>
 	Password：	<input type="password" name="password" /><br/>
 	<input type="submit" value="Login"/>
 </form>
