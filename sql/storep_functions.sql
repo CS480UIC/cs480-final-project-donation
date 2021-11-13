@@ -24,20 +24,18 @@ RETURN (SELECT count(*) FROM store);
 END$$
 DELIMITER ;
 
+USE `donation`;
+DROP function IF EXISTS `donation`.`get_item_count`;
+;
+
+DELIMITER $$
+USE `donation`$$
 CREATE DEFINER=`root`@`localhost` FUNCTION `get_item_count`() RETURNS int
     READS SQL DATA
 BEGIN
 RETURN (SELECT count(*) FROM item);
-END
 
-CREATE DEFINER=`root`@`localhost` FUNCTION `order_delivered`() RETURNS int
-    READS SQL DATA
-BEGIN
-RETURN (SELECT COUNT(order_id) FROM orders WHERE orderstatus = 'delivered');
-END
+END$$
 
-CREATE DEFINER=`root`@`localhost` FUNCTION `pending_delivery`() RETURNS int
-    READS SQL DATA
-BEGIN
-RETURN (SELECT count(order_id) FROM orders WHERE orderstatus = 'pending');
-END
+DELIMITER ;
+;
