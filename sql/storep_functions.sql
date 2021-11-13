@@ -25,6 +25,50 @@ END$$
 DELIMITER ;
 
 USE `donation`;
+DROP procedure IF EXISTS `donation`.`category_count`;
+;
+
+DELIMITER $$
+USE `donation`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `category_count`(IN count_name VARCHAR(50), OUT category_count INT)
+    READS SQL DATA
+BEGIN
+SELECT COUNT(category_id) INTO category_count FROM donation.item, donation.category
+WHERE count_name = category.category_name;
+
+END$$
+
+DELIMITER ;
+;
+
+USE `donation`;
+DROP procedure IF EXISTS `donation`.`user_details`;
+;
+
+DELIMITER $$
+USE `donation`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `user_details`(IN user_email VARCHAR(50), IN user_phone VARCHAR(20))
+BEGIN
+
+DECLARE enterEmail VARCHAR(50);
+DECLARE enterPhone VARCHAR(20);
+DECLARE result BOOL;
+
+SELECT tb_user.email, tb_user.phone into enterEmail, enterPhone
+FROM tb_user
+WHERE tb_user.email = user_email AND tb_user.phone = user_phone;
+IF enterEmail IS NOT NULL AND enterPhone IS NOT NULL THEN
+SET result = TRUE;
+ELSE SET result = FALSE;
+END IF;
+SELECT result;
+
+END$$
+
+DELIMITER ;
+;
+
+USE `donation`;
 DROP function IF EXISTS `donation`.`get_item_count`;
 ;
 
