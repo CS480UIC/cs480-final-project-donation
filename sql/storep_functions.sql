@@ -39,3 +39,19 @@ END$$
 
 DELIMITER ;
 ;
+
+USE `donation`;
+DROP function IF EXISTS `donation`.`order_delivered`;
+;
+
+DELIMITER $$
+USE `donation`$$
+CREATE DEFINER=`root`@`localhost` FUNCTION `order_delivered`() RETURNS int
+    READS SQL DATA
+BEGIN
+RETURN (SELECT COUNT(order_id) FROM orders WHERE orderstatus = 'delivered');
+
+END$$
+
+DELIMITER ;
+;
