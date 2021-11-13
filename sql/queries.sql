@@ -38,3 +38,32 @@ where exists (
     where sales_id = E.employee_id
     and total_amount< 10
 );
+
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `donation`.`min_total_view` AS
+    SELECT 
+        `donation`.`orders`.`order_id` AS `order_id`,
+        `donation`.`orders`.`order_date` AS `order_date`,
+        MIN(`donation`.`orders`.`total_amount`) AS `MIN(total_amount)`
+    FROM
+        `donation`.`orders`;
+	
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `donation`.`employee_poistion_view` AS
+    SELECT 
+        CONCAT('Employee: ',
+                `donation`.`employee`.`first_name`,
+                ' ',
+                `donation`.`employee`.`last_name`) AS `CONCAT('Employee', first_name, last_name)`,
+        `donation`.`employee`.`position` AS `position`
+    FROM
+        `donation`.`employee`
+    ORDER BY `donation`.`employee`.`first_name`;
+    
+ 
