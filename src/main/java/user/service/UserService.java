@@ -7,7 +7,7 @@ import user.domain.User;
 
 /**
  * logic functions such as register, login
- * @author Aayush Makharia
+ * @author Kai Qi && Aji
  */
 public class UserService {
 	private UserDao userDao = new UserDao();

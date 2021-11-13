@@ -13,6 +13,29 @@
     <url-pattern>/Entity1ServletCreate</url-pattern>
   </servlet-mapping>
   
+   <servlet>
+    <description></description>
+    <display-name>StoreServletCreate</display-name>
+    <servlet-name>StoreServletCreate</servlet-name>
+    <servlet-class>store_entity.web.servlet.StoreServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreServletCreate</servlet-name>
+    <url-pattern>/StoreServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>StoreServletRead</display-name>
+    <servlet-name>StoreServletRead</servlet-name>
+    <servlet-class>store_entity.web.servlet.StoreServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreServletRead</servlet-name>
+    <url-pattern>/StoreServletRead</url-pattern>
+  </servlet-mapping>
+  
+  
   <servlet>
     <description></description>
     <display-name>Entity1ServletRead</display-name>

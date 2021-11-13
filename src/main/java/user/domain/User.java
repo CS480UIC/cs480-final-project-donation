@@ -68,7 +68,22 @@ public class User {
 
 	private String first_name;
 	private String last_name;
-	
+	private String address;
+	/**
+	 * @return the address
+	 */
+	public String getAddress() {
+		return address;
+	}
+
+	/**
+	 * @param address the address to set
+	 */
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
 	private String password; 
 	private String email;
 	private String phone;
@@ -98,4 +113,6 @@ public class User {
 		return "User [ first_name=" + first_name + ", password="
 				+ password + ", email=" + email +"]";
 	}
+
+	
 }

@@ -22,10 +22,8 @@
   
   <body>
   <h1>Create Store Record</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Store Id:<input type="text" name="store_id" value="${form.store_id }"/>
-	<span style="color: red; font-weight: 900">${errors.store_id }</span>
-	<br/>
+<form action="<c:url value='/StoreServletCreate'/>" method="post">
+	
 	Store Name：<input type="text" name="store_name" value="${form.store_name }"/>
 	<span style="color: red; font-weight: 900">${errors.store_name }</span>
 	<br/>

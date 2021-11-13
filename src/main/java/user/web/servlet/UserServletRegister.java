@@ -51,9 +51,11 @@ public class UserServletRegister extends HttpServlet {
 		}
 		
 		form.setFirst_name(info.get(1));
-		form.setPassword(info.get(2));
-		form.setEmail(info.get(3));
-		
+		form.setLast_name(info.get(2));
+		form.setPhone(info.get(3));
+		form.setAddress(info.get(4));
+		form.setEmail(info.get(5));
+		form.setPassword(info.get(6));
 		try {
 			userservice.regist(form);
 			response.sendRedirect( request.getContextPath() + "/jsps/user/login.jsp");

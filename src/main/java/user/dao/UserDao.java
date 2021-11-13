@@ -69,11 +69,14 @@ public class UserDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/donation", MySQL_user, MySQL_password);
 			
-			String sql = "insert into user values(?,?,?)";
+			String sql = "insert into tb_user values(null,?,?,?,?,?,?)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setString(1,user.getFirst_name());
-		    preparestatement.setString(2,user.getPassword());
-		    preparestatement.setString(3,user.getEmail());
+		    preparestatement.setString(2,user.getLast_name());
+		    preparestatement.setString(3,user.getPhone());
+		    preparestatement.setString(4,user.getAddress());
+		    preparestatement.setString(5,user.getEmail());
+		    preparestatement.setString(6,user.getPassword());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
