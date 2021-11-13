@@ -66,4 +66,31 @@ VIEW `donation`.`employee_poistion_view` AS
         `donation`.`employee`
     ORDER BY `donation`.`employee`.`first_name`;
     
- 
+ CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `donation`.`user_view` AS
+    SELECT 
+        `donation`.`tb_user`.`user_id` AS `user_id`,
+        `donation`.`tb_user`.`first_name` AS `first_name`,
+        `donation`.`tb_user`.`last_name` AS `last_name`,
+        `donation`.`tb_user`.`email` AS `email`
+    FROM
+        `donation`.`tb_user`
+    ORDER BY `donation`.`tb_user`.`first_name`;
+
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `donation`.`august_sales_view` AS
+    SELECT 
+        `donation`.`orders`.`order_id` AS `order_id`,
+        `donation`.`orders`.`order_date` AS `order_date`,
+        COUNT(0) AS `COUNT(*)`,
+        `donation`.`orders`.`orderstatus` AS `orderstatus`
+    FROM
+        `donation`.`orders`
+    GROUP BY MONTH(`donation`.`orders`.`order_date`) , CAST(`donation`.`orders`.`order_date` AS DATE)
+    HAVING (MONTH(`donation`.`orders`.`order_date`) = 8);
