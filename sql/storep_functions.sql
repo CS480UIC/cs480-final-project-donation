@@ -55,3 +55,18 @@ END$$
 
 DELIMITER ;
 ;
+
+USE `donation`;
+DROP function IF EXISTS `donation`.`pending_delivery`;
+;
+
+DELIMITER $$
+USE `donation`$$
+CREATE DEFINER=`root`@`localhost` FUNCTION `pending_delivery`() RETURNS int
+    READS SQL DATA
+BEGIN
+RETURN (SELECT count(order_id) FROM orders WHERE orderstatus = 'pending');
+
+END$$
+
+DELIMITER ;
