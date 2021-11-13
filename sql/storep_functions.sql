@@ -24,3 +24,9 @@ RETURN (SELECT count(*) FROM store);
 END$$
 DELIMITER ;
 
+CREATE DEFINER=`root`@`localhost` FUNCTION `get_item_count`() RETURNS int
+    READS SQL DATA
+BEGIN
+RETURN (SELECT count(*) FROM item);
+END
+
