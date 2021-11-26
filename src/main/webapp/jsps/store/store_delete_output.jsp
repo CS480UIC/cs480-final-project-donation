@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Store</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,21 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>You Will Delete This Store</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/StoreServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		<input type="hidden" name="store_name" value="${store.store_name }"/>
+	Store Name   :<input type="text" name="store_name" value="${store.store_name }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Address：<input type="text" name="address" value="${store.address }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Phone	：<input type="text" name="phone" value="${store.phone }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	Email	：<input type="text" name="email" value="${store.email }" disabled/>
+	<br/>
+	<input type="submit" value="Delete Store"/>
 </form>
 
 </body>

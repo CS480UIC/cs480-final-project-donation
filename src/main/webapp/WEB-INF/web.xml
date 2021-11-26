@@ -35,6 +35,27 @@
     <url-pattern>/StoreServletRead</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>StoreServletUpdate</display-name>
+    <servlet-name>StoreServletUpdate</servlet-name>
+    <servlet-class>store_entity.web.servlet.StoreServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreServletUpdate</servlet-name>
+    <url-pattern>/StoreServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>StoreServletDelete</display-name>
+    <servlet-name>StoreServletDelete</servlet-name>
+    <servlet-class>store_entity.web.servlet.StoreServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreServletDelete</servlet-name>
+    <url-pattern>/StoreServletDelete</url-pattern>
+  </servlet-mapping>
   
   <servlet>
     <description></description>

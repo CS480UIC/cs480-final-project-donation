@@ -24,11 +24,12 @@
   <h1>Read Store Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Store Name    :<input type="text" name="store_name" value="${store.store_name }" disabled/>
+	Store Name   :<input type="text" name="store_name" value="${store.store_name }" size=50 disabled/>
 	<br/>
-	Address：<input type="text" name="address" value="${store.address }" disabled/>
+	
+	Address：<input type="text" name="address" value="${store.address }" disabled />
 	<br/>
-	Phone    :<input type="text" name="store_name" value="${store.phone }" disabled/>
+	Phone：<input type="text" name="phone" value="${store.phone }" disabled />
 	<br/>
 	Email	：<input type="text" name="email" value="${store.email }" size=50 disabled/>
 	<br/>

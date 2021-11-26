@@ -22,11 +22,13 @@
   
   <body>
   <h1>Update a Store</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/StoreServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update Store Address   :<input type="text" name="address" value="${form.address }"/>
-	<span style="color: red; font-weight: 900">${errors.address }</span>
+    Update Store By Name   :<input type="text" name="store_name" value="${form.store_name }"/>
+	<span style="color: red; font-weight: 900">${errors.store_name }</span>
 	<br/>
+	
+	
 	<input type="submit" value="Update Address"/>
 </form>
   </body>
