@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update Entity</title>
+    <title>Update Store</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -27,27 +27,27 @@
 	Store Name   :<input type="text" name="store_name" value="${store.store_name }" disabled/>
 	<br/>
 	
-	Address：<input type="text" name="address" value="${store.address }" disabled />
+	Old Address：<input type="text" name="address" value="${store.address }" disabled />
 	<br/>
-	Phone：<input type="text" name="phone" value="${store.phone }" disabled />
+	Old Phone：<input type="text" name="phone" value="${store.phone }" disabled />
 	<br/>
-	Email	：<input type="text" name="email" value="${store.email }" disabled/>
+	Old Email	：<input type="text" name="email" value="${store.email }" disabled/>
 	<br/>
 </form>
 <h1>Please Update the values below</h1>
 <form action="<c:url value='/StoreServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-	Store Name：<input type="text" name="store_name" value="${store.store_name }"/>
+	    <input type="hidden" name="store_name" value="${store.store_name }"/>
 	<span style="color: red; font-weight: 900">${errors.store_name }</span>
 	<br/>
 				
-	Address：<input type="text" name="address" value="${store.address }"/>
+	New Address：<input type="text" name="address" value="${store.address }"/>
 	<span style="color: red; font-weight: 900">${errors.address }</span>
 	<br/>
-	Phone：<input type="text" name="phone" value="${store.phone }"/>
+	New Phone：<input type="text" name="phone" value="${store.phone }"/>
 	<span style="color: red; font-weight: 900">${errors.phone }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${store.email }"/>
+	New Email	：<input type="text" name="email" value="${store.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
 	<input type="submit" value="Update Store"/>
