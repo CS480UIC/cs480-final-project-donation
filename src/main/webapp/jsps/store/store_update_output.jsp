@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update Entity</title>
+    <title>Update Store</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
