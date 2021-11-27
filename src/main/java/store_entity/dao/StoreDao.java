@@ -93,7 +93,8 @@ public class StoreDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/donation", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE store SET address = ?, phone = ?,email = ? where store_name = ?;ALTER TABLE store drop store_id;ALTER TABLE store ADD store_id NOT NULL PRIMARY KEY AUTO_INCREMENT FIRST;";
+			String sql = ";UPDATE store SET address = ?, phone = ?,email = ? where store_name = ?";
+		
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 			
 		    preparestatement.setString(1,form.getAddress());
@@ -101,6 +102,7 @@ public class StoreDao {
 			preparestatement.setString(3,form.getEmail());
 			    
 		    preparestatement.setString(4,form.getStore_name());
+		    
 		    preparestatement.executeUpdate();
 		    
 		    
