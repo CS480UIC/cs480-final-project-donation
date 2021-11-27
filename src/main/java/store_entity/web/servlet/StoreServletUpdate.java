@@ -81,7 +81,7 @@ public class StoreServletUpdate extends HttpServlet {
 			store.setPhone(info.get(3));
 			store.setEmail(info.get(4));	
 			
-			store.setStore_name(request.getParameter("store_name"));
+			store.setStore_name(request.getParameter("store_name")); 
 
 			try {
 				storedao.update(store);
