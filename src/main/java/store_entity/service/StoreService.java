@@ -1,6 +1,8 @@
 package store_entity.service;
 
 
+import java.util.List;
+
 import store_entity.dao.StoreDao;
 import store_entity.domain.Store;
 
@@ -34,5 +36,8 @@ public class StoreService {
 	 * @throws IllegalAccessException 
 	 * @throws InstantiationException 
 	 */
-	
+	public List<Object> findall() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return storeDao.findall();
+		
+	}
 }

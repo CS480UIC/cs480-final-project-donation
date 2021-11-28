@@ -8,23 +8,21 @@
 
 </head>
 <body>
-	<h3 align="center"> User Table </h3>
+	<h3 align="center"> Sales Bigger Than Average Table </h3>
 	<table border="1" width="70%" align="center">
 	<tr>
-		<th>first_name</th>
-		<th>last_name</th>
-		<th>phone</th>
-		<th>addrss</th>
-		<th>email</th>
+		<th>sale_id</th>
+		<th>order_id</th>
+		<th>total_amount</th>
+		
 		
 	</tr>
 <c:forEach items="${UserList}" var="user">
 	<tr>
-		<td>${user.first_name}</td>
-		<td>${user.last_name}</td>
-		<td>${user.phone}</td>
-		<td>${user.address}</td>
-		<td>${user.email}</td>
+		<td>${user.sales_id}</td>
+		<td>${user.order_id}</td>
+		<td>${user.total_amount}</td>
+		
 	</tr>
 </c:forEach>
 </table>

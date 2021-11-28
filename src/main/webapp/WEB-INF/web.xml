@@ -144,12 +144,27 @@
     <display-name>findAll</display-name>
     <servlet-name>findAll</servlet-name>
     
-    <servlet-class>user.web.servlet.findAll</servlet-class>
+    <servlet-class>tb_user.web.servlet.findAll</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  
+   
+  <servlet>
+    <description></description>
+    <display-name>findBiggerAvgSaleView</display-name>
+    <servlet-name>findBiggerAvgSaleView</servlet-name>
+    
+    <servlet-class>queries.web.servlet.findBiggerAvgSaleView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findBiggerAvgSaleView</servlet-name>
+    <url-pattern>/findBiggerAvgSaleView</url-pattern>
+  </servlet-mapping>
+  
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>
