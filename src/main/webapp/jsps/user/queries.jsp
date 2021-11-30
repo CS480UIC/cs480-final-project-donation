@@ -22,10 +22,17 @@
   </head>
   
   <body>
-    <h1>Welcome to the Demo</h1>
+    <h1>Welcome to Donation</h1>
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 
+    <br>
+ 	<a href="<c:url value='/findBiggerAvgSaleView'/>" target="body">Please list all sales who total sale amount more than average in order table</a>&nbsp;&nbsp;
+ 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
+ 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
+ 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
+ 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
+ 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
+ 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
     
   </body>
 </html>
