@@ -12,7 +12,6 @@
     <servlet-name>Entity1ServletCreate</servlet-name>
     <url-pattern>/Entity1ServletCreate</url-pattern>
   </servlet-mapping>
-  
    <servlet>
     <description></description>
     <display-name>StoreServletCreate</display-name>
@@ -79,7 +78,93 @@
     <url-pattern>/Entity1ServletRead</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>OrderServletCreate</display-name>
+    <servlet-name>OrderServletCreate</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletCreate</servlet-name>
+    <url-pattern>/OrderServletCreate</url-pattern>
+  </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>OrderServletRead</display-name>
+    <servlet-name>OrderServletRead</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletRead</servlet-name>
+    <url-pattern>/OrderServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>OrderServletUpdate</display-name>
+    <servlet-name>OrderServletUpdate</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletUpdate</servlet-name>
+    <url-pattern>/OrderServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>OrderServletDelete</display-name>
+    <servlet-name>OrderServletDelete</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletDelete</servlet-name>
+    <url-pattern>/OrderServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ItemServletCreate</display-name>
+    <servlet-name>ItemServletCreate</servlet-name>
+    <servlet-class>item.web.servlet.ItemServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemServletCreate</servlet-name>
+    <url-pattern>/ItemServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ItemServletRead</display-name>
+    <servlet-name>ItemServletRead</servlet-name>
+    <servlet-class>item.web.servlet.ItemServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemServletRead</servlet-name>
+    <url-pattern>/ItemServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ItemServletUpdate</display-name>
+    <servlet-name>ItemServletUpdate</servlet-name>
+    <servlet-class>item.web.servlet.ItemServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemServletUpdate</servlet-name>
+    <url-pattern>/ItemServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ItemServletDelete</display-name>
+    <servlet-name>ItemServletDelete</servlet-name>
+    <servlet-class>item.web.servlet.ItemServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemServletDelete</servlet-name>
+    <url-pattern>/ItemServletDelete</url-pattern>
+  </servlet-mapping>
   
     <servlet>
     <description></description>
