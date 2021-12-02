@@ -32,10 +32,10 @@ public class ItemService {
         itemDao.updateItemById(item);
     }
 
-    public void deleteItemById(Item form) throws ItemException, ClassNotFoundException, InstantiationException, IllegalAccessException{
+    public void deleteItemByName(Item form) throws ItemException, ClassNotFoundException, InstantiationException, IllegalAccessException{
         Item item = getItem(form);
         if (item == null) throw new ItemException("This item is not in the database");
-        itemDao.deleteItemById(item.getItem_id());
+        itemDao.deleteItemByName(item.getItem_name());
     }
 
 
