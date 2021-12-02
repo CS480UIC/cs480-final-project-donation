@@ -88,7 +88,7 @@ VIEW `donation`.`august_sales_view` AS
     SELECT 
         `donation`.`orders`.`order_id` AS `order_id`,
         `donation`.`orders`.`order_date` AS `order_date`,
-        COUNT(0) AS `COUNT(*)`,
+        COUNT(0) AS `count`,
         `donation`.`orders`.`orderstatus` AS `orderstatus`
     FROM
         `donation`.`orders`
