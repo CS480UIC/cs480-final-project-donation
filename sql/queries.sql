@@ -1,5 +1,5 @@
 CREATE VIEW `salesView` AS 
-select `employee`.`last_name` AS `last_name`,`employee`.`first_name` AS `first_name` 
+select `employee`.`last_name` AS `last_name`,`employee`.`first_name` AS `first_name`, `employ_id` AS `employee_id` 
 from `employee` where (`employee`.`position` = 'sales') 
 order by `employee`.`last_name`;
 
