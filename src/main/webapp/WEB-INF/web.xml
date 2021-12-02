@@ -12,6 +12,7 @@
     <servlet-name>Entity1ServletCreate</servlet-name>
     <url-pattern>/Entity1ServletCreate</url-pattern>
   </servlet-mapping>
+  
    <servlet>
     <description></description>
     <display-name>StoreServletCreate</display-name>
@@ -67,17 +68,39 @@
     <url-pattern>/EmployeeServletCreate</url-pattern>
   </servlet-mapping>
   
-  <servlet>
+  
+   <servlet>
     <description></description>
-    <display-name>Entity1ServletRead</display-name>
-    <servlet-name>Entity1ServletRead</servlet-name>
-    <servlet-class>entity1.web.servlet.Entity1ServletRead</servlet-class>
+    <display-name>EmployeeServletRead</display-name>
+    <servlet-name>EmployeeServletRead</servlet-name>
+    <servlet-class>employee_entity.web.servlet.EmployeeServletRead</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Entity1ServletRead</servlet-name>
-    <url-pattern>/Entity1ServletRead</url-pattern>
+    <servlet-name>EmployeeServletRead</servlet-name>
+    <url-pattern>/EmployeeServletRead</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServletUpdate</display-name>
+    <servlet-name>EmployeeServletUpdate</servlet-name>
+    <servlet-class>employee_entity.web.servlet.EmployeeServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServletUpdate</servlet-name>
+    <url-pattern>/EmployeeServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServletDelete</display-name>
+    <servlet-name>EmployeeServletDelete</servlet-name>
+    <servlet-class>employee_entity.web.servlet.EmployeeServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServletDelete</servlet-name>
+    <url-pattern>/EmployeeServletDelete</url-pattern>
+  </servlet-mapping>
   <servlet>
     <description></description>
     <display-name>OrderServletCreate</display-name>
@@ -165,6 +188,18 @@
     <servlet-name>ItemServletDelete</servlet-name>
     <url-pattern>/ItemServletDelete</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Entity1ServletRead</display-name>
+    <servlet-name>Entity1ServletRead</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletRead</servlet-name>
+    <url-pattern>/Entity1ServletRead</url-pattern>
+  </servlet-mapping>
+  
+  
   
     <servlet>
     <description></description>
@@ -258,6 +293,42 @@
   <servlet-mapping>
     <servlet-name>findBiggerAvgSaleView</servlet-name>
     <url-pattern>/findBiggerAvgSaleView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findOrderUserView</display-name>
+    <servlet-name>findOrderUserView</servlet-name>
+    
+    <servlet-class>queries.web.servlet.findOrderUserView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findOrderUserView</servlet-name>
+    <url-pattern>/findOrderUserView</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+    <description></description>
+    <display-name>findAllSalesView</display-name>
+    <servlet-name>findAllSalesView</servlet-name>
+    
+    <servlet-class>queries.web.servlet.findAllSalesView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findAllSalesView</servlet-name>
+    <url-pattern>/findAllSalesView</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>findSalesWithLessAmount</display-name>
+    <servlet-name>findSalesWithLessAmount</servlet-name>
+    
+    <servlet-class>queries.web.servlet.findSalesWithLessAmount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findSalesWithLessAmount</servlet-name>
+    <url-pattern>/findSalesWithLessAmount</url-pattern>
   </servlet-mapping>
   
   
