@@ -188,6 +188,9 @@
     <servlet-name>ItemServletDelete</servlet-name>
     <url-pattern>/ItemServletDelete</url-pattern>
   </servlet-mapping>
+  
+  
+  
   <servlet>
     <description></description>
     <display-name>Entity1ServletRead</display-name>
@@ -331,6 +334,17 @@
     <url-pattern>/findSalesWithLessAmount</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>findGetItemCount</display-name>
+    <servlet-name>findGetItemCount</servlet-name>
+    
+    <servlet-class>query4.web.servlet.findGetItemCount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findGetItemCount</servlet-name>
+    <url-pattern>/findGetItemCount</url-pattern>
+  </servlet-mapping>
   
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
