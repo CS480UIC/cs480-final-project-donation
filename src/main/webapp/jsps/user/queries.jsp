@@ -26,13 +26,11 @@
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
     <br>
- 	<a href="<c:url value='/findBiggerAvgSaleView'/>" target="body">Please list all sales who total sale amount more than average in order table</a>&nbsp;&nbsp;
- 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 	<a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
+ 	<a href="<c:url value='/findBiggerAvgSaleView'/>" target="body">Please list all sales who total sale amount more than average in order table</a>&nbsp;&nbsp;<br>
+ 	<a href="<c:url value='/findOrderUserView'/>" target="body">Please list all users who put orders in order tables</a>&nbsp;&nbsp;<br>
+ 	<a href="<c:url value='/findAllSalesView'/>" target="body">Please list all sales in the table</a>&nbsp;&nbsp;<br>
+ 	<a href="<c:url value='/findSalesWithLessAmount'/>" target="body">Please list all the Sales who sales amount less 10 dollars</a>&nbsp;&nbsp;<br>
+ 	
     
   </body>
 </html>
