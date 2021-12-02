@@ -1,0 +1,51 @@
+package query7.web.servlet;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import query7.service.SalesEmployeeViewService;
+import user.service.UserService;
+
+/**
+ * Servlet implementation class findAll
+ */
+
+public class findSalesEmployeeView extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request,response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		SalesEmployeeViewService userservice = new SalesEmployeeViewService();
+		try {
+			request.setAttribute("UserList", userservice.SalesEmployee());
+		} catch (InstantiationException | IllegalAccessException
+				| ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			List<Object> li = userservice.SalesEmployee();
+			for(int i = 0; i < li.size();i++){
+				System.out.println(li.get(i).toString());
+			}
+			
+		} catch (InstantiationException | IllegalAccessException
+				| ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		
+		request.getRequestDispatcher("/jsps/user/ajiq8_list_sales_employee_view.jsp").forward(request, response);
+	}
+
+}
