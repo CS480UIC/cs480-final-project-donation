@@ -1,5 +1,42 @@
-create database donation;
-use donation;
+SET foreign_key_checks = 0;
+drop table if exists test;
+SET foreign_key_checks = 1;
+
+SET foreign_key_checks = 0;
+drop table if exists store;
+SET foreign_key_checks = 1;
+
+SET foreign_key_checks = 0;
+drop table if exists employee;
+SET foreign_key_checks = 1;
+
+SET foreign_key_checks = 0;
+drop table if exists tb_user;
+SET foreign_key_checks = 1;
+
+SET foreign_key_checks = 0;
+drop table if exists orders;
+SET foreign_key_checks = 1;
+
+SET foreign_key_checks = 0;
+drop table if exists donation_cart;
+SET foreign_key_checks = 1;
+
+SET foreign_key_checks = 0;
+drop table if exists category;
+SET foreign_key_checks = 1;
+
+SET foreign_key_checks = 0;
+drop table if exists item;
+SET foreign_key_checks = 1;
+
+SET foreign_key_checks = 0;
+drop table if exists user;
+SET foreign_key_checks = 1;
+SET foreign_key_checks = 0;
+drop table if exists entity1;
+SET foreign_key_checks = 1;
+
 CREATE TABLE `store` (
   `store_id` int(11) NOT NULL AUTO_INCREMENT,
   `store_name` varchar(50) NOT NULL,
@@ -108,7 +145,7 @@ INSERT INTO donation.employee (employee_id, store_id, first_name, last_name, gen
 INSERT INTO donation.employee (employee_id, store_id, first_name, last_name, gender, position, email) VALUES (50004,1004,'Taha','Shah','Male','Customer Executive','t.shah@gmail.com');
 INSERT INTO donation.employee (employee_id, store_id, first_name, last_name, gender, position, email) VALUES (50005,1005,'Tarun','Verma','Male','Software Engineer','t.verma@gmail.com');
 INSERT INTO donation.employee (employee_id, store_id, first_name, last_name, gender, position, email) VALUES (50006,1006,'Vijay','Kochar','Male','Network Engineer','vjay.k@gmail.com');
-INSERT INTO donation.employee (employee_id, store_id, first_name, last_name, gender, position, email,`email`) VALUES (50007,1001,'tom ','cruise','male','Sales','tom_curise@gmail.com');
+INSERT INTO donation.employee (employee_id, store_id, first_name, last_name, gender, position, email) VALUES (50007,1001,'Tom ','cruise','male','Sales','tom_curise@gmail.com');
 INSERT INTO donation.employee (employee_id, store_id, first_name, last_name, gender, position, email) VALUES (50008,1002,'Jerry','Henderson','Male','Sales','jerry_henderson@gmail.com');
 INSERT INTO donation.employee (employee_id, store_id, first_name, last_name, gender, position, email) VALUES (50009,1003,'Mary','Lee','Female','Sales','mary_lee@yahoo.com');
 INSERT INTO donation.employee (employee_id, store_id, first_name, last_name, gender, position, email) VALUES (50010,1004,'Jeniffer','Stone','female','Sales','jeniffer_stone@yahoo.com');
@@ -144,9 +181,9 @@ INSERT INTO donation.category (category_id, category_name, last_update) VALUES (
 INSERT INTO donation.category (category_id, category_name, last_update) VALUES (1105,'Furniture','2021-10-10');
 INSERT INTO donation.category (category_id, category_name, last_update) VALUES (1106,'Tools','2021-10-06');
 
-INSERT INTO donation.item (item_id, order_id, category_id, cart_id, donation_cartitem_name, description) VALUES (1111,1011,1101,70001, 'Math Book','Calculus -1');
-INSERT INTO donation.item (item_id, order_id, category_id, cart_id, item_name, description) VALUES (1111,1011,1101,70001, 'teddy bear','brown 5" ft teddy bear');
-INSERT INTO donation.item (item_id, order_id, category_id, cart_id, item_name, description) VALUES (1111,1011,1101,70001, 'music player','Sony 250 watts bluetooth');
-INSERT INTO donation.item (item_id, order_id, category_id, cart_id, item_name, description) VALUES (1111,1011,1101,70001, 'Jacket','Black Tommy Winter Jacket');
-INSERT INTO donation.item (item_id, order_id, category_id, cart_id, item_name, description) VALUES (1111,1011,1101,70001, 'Study table','IKEA white study table');
-INSERT INTO donation.item (item_id, order_id, category_id, cart_id, item_name, description) VALUES (1111,1011,1101,70001, 'Hammers','10 Pounds wooden Hammer');
+INSERT INTO donation.item (item_id, order_id, category_id, cart_id, item_name, description) VALUES (1111,1011,1101,70001, 'Math Book','Calculus -1');
+INSERT INTO donation.item (item_id, order_id, category_id, cart_id, item_name, description) VALUES (1112,1012,1102,70003, 'teddy bear','brown 5" ft teddy bear');
+INSERT INTO donation.item (item_id, order_id, category_id, cart_id, item_name, description) VALUES (1113,1011,1103,70001, 'music player','Sony 250 watts bluetooth');
+INSERT INTO donation.item (item_id, order_id, category_id, cart_id, item_name, description) VALUES (1114,1013,1104,70004, 'Jacket','Black Tommy Winter Jacket');
+INSERT INTO donation.item (item_id, order_id, category_id, cart_id, item_name, description) VALUES (1115,1014,1105,70004, 'Study table','IKEA white study table');
+INSERT INTO donation.item (item_id, order_id, category_id, cart_id, item_name, description) VALUES (1116,1015,1106,70005, 'Hammers','10 Pounds wooden Hammer');
