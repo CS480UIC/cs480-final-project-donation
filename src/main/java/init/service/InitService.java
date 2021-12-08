@@ -1,5 +1,6 @@
 package init.service;
 
+import java.io.IOException;
 import java.util.List;
 
 import init.dao.InitDao;
@@ -14,9 +15,10 @@ public class InitService {
 	private InitDao initDao = new InitDao();
 	
 	/**
+	 * @throws IOException 
 	 * 
 	 */
-	public void initializeDB() throws InitException, ClassNotFoundException, InstantiationException, IllegalAccessException{
+	public void initializeDB() throws InitException, ClassNotFoundException, InstantiationException, IllegalAccessException, IOException{
 		
 		initDao.initialize();
 	}
