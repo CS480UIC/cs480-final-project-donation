@@ -12,7 +12,7 @@ public class ReadSqlFile {
 		String temp = "";
 		ArrayList<String> sqls = new ArrayList<String>();
 		String onesql ="";
-		File file = new File("/home/kq/Desktop/CS480donation/cs480-final-project-donation/sql/testqueries.sql"); /*your sql file absolute path*/
+		File file = new File("/Desktop/CS480donation/cs480-final-project-donation/sql/testqueries.sql"); /*your sql file absolute path*/
 		if(!file.exists()) {
 			System.out.println("Cannot find the sql files.");
 			System.exit(0);
