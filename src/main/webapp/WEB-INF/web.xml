@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>CS480 Demo</display-name>
+    <servlet>
+    <description></description>
+    <display-name>Entity1ServletCreate</display-name>
+    <servlet-name>Entity1ServletCreate</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletCreate</servlet-name>
+    <url-pattern>/Entity1ServletCreate</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>StoreServletCreate</display-name>
+    <servlet-name>StoreServletCreate</servlet-name>
+    <servlet-class>store_entity.web.servlet.StoreServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreServletCreate</servlet-name>
+    <url-pattern>/StoreServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>StoreServletRead</display-name>
+    <servlet-name>StoreServletRead</servlet-name>
+    <servlet-class>store_entity.web.servlet.StoreServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreServletRead</servlet-name>
+    <url-pattern>/StoreServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>StoreServletUpdate</display-name>
+    <servlet-name>StoreServletUpdate</servlet-name>
+    <servlet-class>store_entity.web.servlet.StoreServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreServletUpdate</servlet-name>
+    <url-pattern>/StoreServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>StoreServletDelete</display-name>
+    <servlet-name>StoreServletDelete</servlet-name>
+    <servlet-class>store_entity.web.servlet.StoreServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreServletDelete</servlet-name>
+    <url-pattern>/StoreServletDelete</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>EmployeeServletCreate</display-name>
+    <servlet-name>EmployeeServletCreate</servlet-name>
+    <servlet-class>employee_entity.web.servlet.EmployeeServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServletCreate</servlet-name>
+    <url-pattern>/EmployeeServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <description></description>
+    <display-name>EmployeeServletRead</display-name>
+    <servlet-name>EmployeeServletRead</servlet-name>
+    <servlet-class>employee_entity.web.servlet.EmployeeServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServletRead</servlet-name>
+    <url-pattern>/EmployeeServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServletUpdate</display-name>
+    <servlet-name>EmployeeServletUpdate</servlet-name>
+    <servlet-class>employee_entity.web.servlet.EmployeeServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServletUpdate</servlet-name>
+    <url-pattern>/EmployeeServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServletDelete</display-name>
+    <servlet-name>EmployeeServletDelete</servlet-name>
+    <servlet-class>employee_entity.web.servlet.EmployeeServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServletDelete</servlet-name>
+    <url-pattern>/EmployeeServletDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OrderServletCreate</display-name>
+    <servlet-name>OrderServletCreate</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletCreate</servlet-name>
+    <url-pattern>/OrderServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>OrderServletRead</display-name>
+    <servlet-name>OrderServletRead</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletRead</servlet-name>
+    <url-pattern>/OrderServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>OrderServletUpdate</display-name>
+    <servlet-name>OrderServletUpdate</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletUpdate</servlet-name>
+    <url-pattern>/OrderServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>OrderServletDelete</display-name>
+    <servlet-name>OrderServletDelete</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletDelete</servlet-name>
+    <url-pattern>/OrderServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ItemServletCreate</display-name>
+    <servlet-name>ItemServletCreate</servlet-name>
+    <servlet-class>item.web.servlet.ItemServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemServletCreate</servlet-name>
+    <url-pattern>/ItemServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ItemServletRead</display-name>
+    <servlet-name>ItemServletRead</servlet-name>
+    <servlet-class>item.web.servlet.ItemServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemServletRead</servlet-name>
+    <url-pattern>/ItemServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ItemServletUpdate</display-name>
+    <servlet-name>ItemServletUpdate</servlet-name>
+    <servlet-class>item.web.servlet.ItemServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemServletUpdate</servlet-name>
+    <url-pattern>/ItemServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ItemServletDelete</display-name>
+    <servlet-name>ItemServletDelete</servlet-name>
+    <servlet-class>item.web.servlet.ItemServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemServletDelete</servlet-name>
+    <url-pattern>/ItemServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>Entity1ServletRead</display-name>
+    <servlet-name>Entity1ServletRead</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletRead</servlet-name>
+    <url-pattern>/Entity1ServletRead</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>Entity1ServletUpdate</display-name>
+    <servlet-name>Entity1ServletUpdate</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletUpdate</servlet-name>
+    <url-pattern>/Entity1ServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>Entity1ServletDelete</display-name>
+    <servlet-name>Entity1ServletDelete</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletDelete</servlet-name>
+    <url-pattern>/Entity1ServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>InitializeDB</display-name>
+    <servlet-name>InitializeDB</servlet-name>
+    <servlet-class>init.web.servlet.InitializeServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>InitializeDB</servlet-name>
+    <url-pattern>/InitializeDB</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletRegister</display-name>
+    <servlet-name>UserServletRegister</servlet-name>
+    <servlet-class>user.web.servlet.UserServletRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletRegister</servlet-name>
+    <url-pattern>/UserServletRegister</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserServletLogin</display-name>
+    <servlet-name>UserServletLogin</servlet-name>
+    <servlet-class>user.web.servlet.UserServletLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletLogin</servlet-name>
+    <url-pattern>/UserServletLogin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletLogout</display-name>
+    <servlet-name>UserServletLogout</servlet-name>
+    <servlet-class>user.web.servlet.UserServletLogout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletLogout</servlet-name>
+    <url-pattern>/UserServletLogout</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>findAll</display-name>
+    <servlet-name>findAll</servlet-name>
+    
+    <servlet-class>tb_user.web.servlet.findAll</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findAll</servlet-name>
+    <url-pattern>/findAll</url-pattern>
+  </servlet-mapping>
+  
+   
+  <servlet>
+    <description></description>
+    <display-name>findBiggerAvgSaleView</display-name>
+    <servlet-name>findBiggerAvgSaleView</servlet-name>
+    
+    <servlet-class>queries.web.servlet.findBiggerAvgSaleView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findBiggerAvgSaleView</servlet-name>
+    <url-pattern>/findBiggerAvgSaleView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findOrderUserView</display-name>
+    <servlet-name>findOrderUserView</servlet-name>
+    
+    <servlet-class>queries.web.servlet.findOrderUserView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findOrderUserView</servlet-name>
+    <url-pattern>/findOrderUserView</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+    <description></description>
+    <display-name>findAllSalesView</display-name>
+    <servlet-name>findAllSalesView</servlet-name>
+    
+    <servlet-class>queries.web.servlet.findAllSalesView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findAllSalesView</servlet-name>
+    <url-pattern>/findAllSalesView</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>findSalesWithLessAmount</display-name>
+    <servlet-name>findSalesWithLessAmount</servlet-name>
+    
+    <servlet-class>queries.web.servlet.findSalesWithLessAmount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findSalesWithLessAmount</servlet-name>
+    <url-pattern>/findSalesWithLessAmount</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findGetItemCount</display-name>
+    <servlet-name>findGetItemCount</servlet-name>
+    
+    <servlet-class>query4.web.servlet.findGetItemCount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findGetItemCount</servlet-name>
+    <url-pattern>/findGetItemCount</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
